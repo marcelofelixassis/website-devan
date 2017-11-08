@@ -1,0 +1,343 @@
+.mu-menu-btn {
+	position: fixed;
+	right: 15%;
+	top: 50px;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 3px;
+	border: 2px solid #fff;
+	padding: 5px 14px;
+	z-index: 999;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background-color: #F5B110;
+}
+
+.mu-menu-btn:hover,
+.mu-menu-btn:focus {
+	border: 2px solid #fff;
+}
+
+
+.mu-menu-full-overlay {
+	background-color: rgb(0, 0, 0);
+	opacity: 0.6;
+	color: #fff;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+	width: 100%;
+	z-index: 99999;
+}
+
+.mu-menu-full-overlay-show {
+	visibility: visible;
+}
+
+.mu-menu-full-overlay-inner {
+	display: inline;
+	float: left;
+	padding: 12% 15%;	
+	width: 100%;
+}
+
+.mu-menu ul li {
+	list-style: none;
+}
+
+.mu-menu ul li a {
+	color: #fff;
+	display: inline-block;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-menu ul li a:hover {
+	text-decoration: none;
+	color: #F5B110;
+}
+
+
+.mu-menu-close-btn {
+	display: block;
+	font-size: 25px;
+	height: 48px;
+	position: absolute;
+	right: 15%;
+	top: 55px;
+	width: 48px;
+	-webkit-transition: color 0.3s ease-in-out 0s;
+	transition: color 0.3s ease-in-out 0s;
+}
+
+.mu-menu-close-btn .mu-line {
+	background-color: transparent;
+	display: block;
+	position: relative;
+	height: 4px;
+	width: 38px;
+}
+
+.mu-menu-close-btn .mu-line::before {
+	background-color: #fff;
+	content: "";
+	display: block;
+	height: 4px;
+	position: absolute;
+	top: 16px;
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	-webkit-transition: -webkit-transform 0.3s ease-out 0s;
+	transition: -webkit-transform 0.3s ease-out 0s;
+	transition: transform 0.3s ease-out 0s;
+	transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s;
+	width: 38px;
+	z-index: -1;
+}
+
+.mu-menu-close-btn .mu-line::after {
+	 background-color: #fff;
+	content: "";
+	display: block;
+	height: 4px;
+	position: absolute;
+	top: 16px;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: -webkit-transform 0.3s ease-out 0s;
+	transition: -webkit-transform 0.3s ease-out 0s;
+	transition: transform 0.3s ease-out 0s;
+	transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s;
+	width: 38px;
+	z-index: -1;
+}
+
+.mu-menu-close-btn:hover .mu-line:before,
+.mu-menu-close-btn:hover .mu-line:after {
+	-webkit-transform: rotate(0deg);
+	        transform: rotate(0deg);
+} 
+
+
+
+/* RESPONSIVE STYLE */
+/*--------------------*/
+
+@media (max-width: 1199px) {
+
+	.mu-header-featured-content {
+		margin-top: 120px;
+	}
+
+	.mu-video-iframe-area {
+		padding: 16% 0;
+	}
+
+	.mu-video-close-btn {
+		top: 5%;
+		right: 5%;
+		margin-top: 0;
+	}
+
+	.mu-apps-screenshot-slider .slick-prev {
+		left: -25px;
+	}
+
+	.mu-apps-screenshot-slider .slick-next {
+		right: -25px;
+	}
+
+	.mu-contact-content {
+		padding: 0;
+	}
+
+	
+}
+
+@media (max-width: 991px) {	
+
+	.mu-primary-btn {
+		font-size: 14px;
+		padding: 12px 22px;
+	}
+
+	.mu-header-featured-content {
+		margin-top: 35px;
+	}
+
+	.mu-video-iframe-area {
+		padding: 16% 5%;
+	}
+
+	.mu-video-iframe-area iframe {
+		width: 100%;
+	}
+
+	.mu-title-area {
+		padding: 0 50px;
+	}
+
+	.mu-faq-content {
+		padding: 0;
+	}
+
+	.mu-contact-right {
+		margin-top: 50px;
+	}
+
+	.mu-menu-btn {
+		right: 5%;
+	}
+
+	.mu-apps-screenshot-slider .slick-next {
+		right: 0;
+	}
+
+	.mu-apps-screenshot-slider .slick-prev {
+		left: 0;
+	}
+
+	.mu-apps-screenshot-slider .slick-next,
+	.mu-apps-screenshot-slider .slick-prev {
+		width: 40px;
+		height: 40px;
+	}
+
+	.mu-apps-screenshot-slider .slick-prev::before, 
+	.mu-apps-screenshot-slider .slick-next::before {
+		font-size: 18px;
+	}
+
+
+		
+}
+
+@media (max-width: 767px) {
+
+	.mu-header-featured-content h1 {
+		font-size: 35px;
+	}
+
+	.mu-app-download-area {
+		margin-top: 20px;
+	}
+
+	.mu-apple-btn,
+	.mu-google-btn, 
+	.mu-windows-btn {
+		margin-bottom: 10px;
+	} 
+	
+	.mu-menu-btn {
+		top: 44px;
+		color: #fff;
+		font-size: 20px;
+		padding: 5px 12px;
+	}
+
+	.mu-logo {
+		margin-top: 25px;
+	}
+
+	.mu-logo img {
+		width: 200px;
+	}
+		
+		
+}
+
+
+@media (max-width: 640px){
+
+	.mu-header-featured-img,
+	.mu-header-featured-content {
+		width: 100%;
+	}
+
+	.mu-menu ul li a {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	.mu-title-area {
+		padding: 0;
+	}
+			
+
+}
+
+
+@media (max-width: 480px) {
+
+	.mu-logo img {
+		width: 150px;
+	}
+
+	.mu-video-close-btn {
+		top: 2%;
+		right: 5%;
+		height: 40px;
+		line-height: 35px;
+		width: 40px;
+	}
+
+	.mu-menu-close-btn {
+		right: 5%;
+		top: 30px;
+	}
+
+	.mu-video-iframe-area {
+		padding: 10% 5%;
+	}
+
+	.mu-video-iframe-area iframe {
+		height: 250px;
+	}
+
+				
+	
+}
+
+
+@media (max-width: 360px){
+
+	.mu-video-iframe-area {
+		padding: 15% 5%;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+}
+
+
+
+@media (max-width: 320px){
+
+	.mu-video-iframe-area {
+		padding: 30% 5%;
+	}
+	
+	
+	
+	
+}
+
+
+
