@@ -1,0 +1,120 @@
+#mu-feature {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-feature-area {
+	display: inline;
+	float: left;
+	padding: 60px 0;
+	width: 100%;
+}
+
+.mu-title-area {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-title {
+	color: #1c1b1b;
+	margin-bottom: 15px;
+	padding: 0;
+	z-index: 10;
+	text-transform: capitalize;
+}
+
+.mu-title-dot {
+	background-color: #F5B110;
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	display: inline-block;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.mu-title-dot::before {
+	background-color: #F5B110;
+	content: '';
+	position: absolute;
+	left: 15px;
+	height: 3px;
+	width: 70px;
+	top: 2px;
+}
+
+.mu-title-dot::after {
+	background-color: #F5B110;
+	content: '';
+	position: absolute;
+	right: 15px;
+	height: 3px;
+	width: 70px;
+	top: 2px;
+}
+
+.mu-feature-content {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.mu-feature-content-left {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-feature-content-right {
+	display: inline;
+	float: left;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.mu-feature-content-right .media-left {
+	padding-right: 15px;
+}
+
+.mu-feature-btn {
+	color: #fff;
+	font-size: 18px;
+	background-color: #F5B110; 
+	width: 35px;
+  	height: 35px;
+  	text-align: center;
+  	font-size: 20px;
+  	line-height: 1.428571429;
+  	border-radius: 20px;	
+}
+
+
+.mu-feature-content-right .media-heading {
+	font-size: 22px;
+	font-weight: 500;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-feature-content-right .media {
+	margin-top: 15px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-feature-content-right .media p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
