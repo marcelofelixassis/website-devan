@@ -90,7 +90,9 @@
 }
 
 
-
+.image {
+		margin: 0 auto;
+	}
 
 
 
@@ -99,6 +101,8 @@
 
 
 @media (max-width: 1199px) {
+
+	
 
 	.mu-header-featured-content {
 		margin-top: 120px;
@@ -130,6 +134,7 @@
 }
 
 @media (max-width: 991px) {	
+
 
 	.mu-primary-btn {
 		font-size: 14px;
@@ -189,9 +194,6 @@
 
 @media (max-width: 767px) {
 
-	.mu-header-featured-content h1 {
-		font-size: 35px;
-	}
 
 	.mu-app-download-area {
 		margin-top: 20px;
@@ -224,6 +226,7 @@
 
 @media (max-width: 640px){
 
+
 	.mu-header-featured-img,
 	.mu-header-featured-content {
 		width: 100%;
@@ -244,6 +247,10 @@
 
 
 @media (max-width: 480px) {
+
+	.image img {
+		width: 150px;
+	}
 
 	.mu-logo img {
 		width: 150px;
@@ -276,6 +283,10 @@
 
 
 @media (max-width: 360px){
+
+	.image img {
+		margin: 0 auto;
+	}	
 
 	.mu-video-iframe-area {
 		padding: 15% 5%;

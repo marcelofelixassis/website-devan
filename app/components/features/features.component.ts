@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $:any;
-
 
 @Component({
   selector: 'app-features',
@@ -16,5 +14,4 @@ export class FeaturesComponent implements OnInit {
   ngOnInit() {
 
   }
-
 }
